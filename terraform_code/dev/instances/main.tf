@@ -1,12 +1,5 @@
 
 
-#----------------------------------------------------------
-# ACS730 - Week 3 - Terraform Introduction
-#
-# Build EC2 Instances
-#
-#----------------------------------------------------------
-
 #  Define the provider
 provider "aws" {
   region = "us-east-1"
@@ -101,12 +94,10 @@ resource "aws_security_group" "my_sg" {
   )
 }
 
-# Elastic IP
-resource "aws_eip" "static_eip" {
-  instance = aws_instance.my_amazon.id
-  tags = merge(local.default_tags,
-    {
-      "Name" = "${local.name_prefix}-eip"
-    }
-  )
+resource "aws_ecr_repository" "my_ecr_repo" {
+  name = "assignment1-ecr"
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
 }
