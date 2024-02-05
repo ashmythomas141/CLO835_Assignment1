@@ -9,17 +9,16 @@
 ### Steps
  ssh -i keyname IP
 
--sudo yum update -y
--$ sudo yum install docker -y
--$ sudo systemctl start docker
--$ sudo systemctl status docker
--sudo usermod -aG docker ec2-user
+`sudo yum update -y`
+` sudo yum install docker -y`
+`sudo systemctl start docker`
+`sudo systemctl status docker`
+`sudo usermod -aG docker ec2-user`
+`sudo systemctl start docker`
 
--sudo systemctl start docker
-
--aws configure
--vi ~/.aws/credentials
-giving all the AWS credentials
+`aws configure`
+`vi ~/.aws/credentials`
+Giving all the AWS credentials
 
 
 -docker pull image db URI
