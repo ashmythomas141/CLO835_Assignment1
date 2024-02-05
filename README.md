@@ -13,7 +13,8 @@
 ` sudo yum install docker -y`
 `sudo systemctl start docker`
 `sudo systemctl status docker`
-`sudo usermod -aG docker ec2-user`
+
+-`sudo usermod -aG docker ec2-user`
 `sudo systemctl start docker`
 
 `aws configure`
