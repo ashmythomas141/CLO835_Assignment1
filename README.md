@@ -50,7 +50,7 @@ We need to go inside one of the containers with this cmd:
 -ping pink(The other container's name) 
 
 
-### extra commands
+# Extra commands
 # Stop all running containers
 docker stop $(docker ps -q)
 
