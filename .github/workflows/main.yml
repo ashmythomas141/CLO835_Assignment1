@@ -52,3 +52,5 @@ jobs:
         # Pushing the application image to ECR
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:app_$IMAGE_TAG
 
+        
+
