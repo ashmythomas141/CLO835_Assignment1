@@ -27,9 +27,9 @@ Giving all the AWS credentials
 -docker network create  -d bridge test 
 
 
--aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin dburi
+`aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin dburi`
 
--docker run -d --network=test -e MYSQL_ROOT_PASSWORD=pw url of app
+`docker run -d --network=test -e MYSQL_ROOT_PASSWORD=pw url of app`
 `export DBHOST=172.18.0.2`
 `export DBPORT=3306`
 `export DBUSER=root`
