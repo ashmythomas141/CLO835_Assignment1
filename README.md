@@ -15,20 +15,20 @@
 `sudo systemctl status docker`
 
 -`sudo usermod -aG docker ec2-user`
+logout
 `sudo systemctl start docker`
 
 `aws configure`
 `vi ~/.aws/credentials`
 Giving all the AWS credentials
-
+push commands login successful
 
 -docker pull image db URI
 -docker pull image app
+-docker images
 
 -docker network create  -d bridge test 
 
-
-`aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin dburi`
 
 `docker run -d --network=test -e MYSQL_ROOT_PASSWORD=pw url of app`
 `export DBHOST=172.18.0.2`
