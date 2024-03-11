@@ -51,4 +51,6 @@ docker exec -it <blue/pink/lime> /bin/bash
 apt-get update
 apt-get install iputils-ping
 
-ping pink(The other container's name) 
+ping pink(The other container's name)
+
+### Assignment2
